@@ -5,5 +5,8 @@
  *
  * In other words, if do extends<T,U>() doesn't give red squiggles the assertion:
  * "T extends U" is true.
+ *
+ * const _x: U = null as any as T
+ * https://docs.tsafe.dev/main/doextends
  */
 export function doExtends<T extends U, U>(): T | U | void {}
